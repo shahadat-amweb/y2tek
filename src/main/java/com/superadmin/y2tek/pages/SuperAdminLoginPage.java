@@ -1,4 +1,4 @@
-package com.y2tek.pages;
+package com.superadmin.y2tek.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -9,11 +9,11 @@ import org.openqa.selenium.support.PageFactory;
 import com.y2tek.utils.AppConstants;
 import com.y2tek.utils.ElementUtil;
 
-public class LoginPage {
+public class SuperAdminLoginPage {
 	private WebDriver driver;
 	private ElementUtil eleUtil;
 
-	public LoginPage(WebDriver driver) {
+	public SuperAdminLoginPage(WebDriver driver) {
 		this.driver = driver;
 		eleUtil = new ElementUtil(this.driver);
 		PageFactory.initElements(driver, this);
@@ -34,12 +34,12 @@ public class LoginPage {
 		return driver.getCurrentUrl();
 	}
 
-	public DashBoardPage doLogin(String userName, String pwd) {
+	public UsersPage doSuperAdminLogin(String userName, String pwd) {
 		emailId.sendKeys(userName);
 		password.sendKeys(pwd);
 		signBtn.click();
 		doEnterOtp();
-		return new DashBoardPage(driver);
+		return new UsersPage(driver);
 	}
 
 	public void doEnterOtp() {

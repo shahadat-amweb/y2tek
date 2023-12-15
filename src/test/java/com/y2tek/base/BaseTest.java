@@ -1,20 +1,34 @@
 package com.y2tek.base;
 
 import java.util.Properties;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
 import org.testng.asserts.SoftAssert;
+
+import com.superadmin.y2tek.pages.RecoveryPage;
+import com.superadmin.y2tek.pages.SuperAdminLoginPage;
+import com.superadmin.y2tek.pages.UsersPage;
 import com.y2tek.factory.DriverFactory;
+import com.y2tek.pages.BotServicePage;
 import com.y2tek.pages.DashBoardPage;
 import com.y2tek.pages.LoginPage;
+import com.y2tek.pages.PaperTradingPage;
 
 public class BaseTest {
 
 	protected WebDriver driver;
 	protected LoginPage loginPage;
 	protected DashBoardPage dbPage;
+	protected PaperTradingPage ptPage;
+	protected BotServicePage botPage;
+	
+	protected SuperAdminLoginPage superAdLoginPage; 
+	protected UsersPage userPage;
+	protected RecoveryPage recPage;
+	
+	
 	protected DriverFactory df;
 	protected Properties prop;
 	protected SoftAssert softAssert;
@@ -25,6 +39,7 @@ public class BaseTest {
 		prop = df.initProp();
 		driver = df.initDriver(prop);
 		loginPage = new LoginPage(driver);
+		superAdLoginPage = new SuperAdminLoginPage(driver);
 		softAssert = new SoftAssert();
 	}
 
