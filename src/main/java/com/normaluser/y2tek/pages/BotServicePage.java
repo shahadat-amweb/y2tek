@@ -1,4 +1,4 @@
-package com.y2tek.pages;
+package com.normaluser.y2tek.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

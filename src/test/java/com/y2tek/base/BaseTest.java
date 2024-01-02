@@ -7,14 +7,14 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.asserts.SoftAssert;
 
+import com.normaluser.y2tek.pages.BotServicePage;
+import com.normaluser.y2tek.pages.DashBoardPage;
+import com.normaluser.y2tek.pages.LoginPage;
+import com.normaluser.y2tek.pages.PaperTradingPage;
 import com.superadmin.y2tek.pages.RecoveryPage;
 import com.superadmin.y2tek.pages.SuperAdminLoginPage;
 import com.superadmin.y2tek.pages.UsersPage;
 import com.y2tek.factory.DriverFactory;
-import com.y2tek.pages.BotServicePage;
-import com.y2tek.pages.DashBoardPage;
-import com.y2tek.pages.LoginPage;
-import com.y2tek.pages.PaperTradingPage;
 
 public class BaseTest {
 
@@ -27,7 +27,6 @@ public class BaseTest {
 	protected SuperAdminLoginPage superAdLoginPage; 
 	protected UsersPage userPage;
 	protected RecoveryPage recPage;
-	
 	
 	protected DriverFactory df;
 	protected Properties prop;

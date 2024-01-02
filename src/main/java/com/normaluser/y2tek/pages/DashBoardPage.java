@@ -1,4 +1,4 @@
-package com.y2tek.pages;
+package com.normaluser.y2tek.pages;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -37,6 +37,7 @@ public class DashBoardPage {
 	}
 
 	public boolean isDashBoardLinkExist() {
+		
 		return dashBoardOption.isDisplayed();
 
 	}

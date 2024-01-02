@@ -1,4 +1,4 @@
-package com.y2tek.tests;
+package com.normaluser.y2tek.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;

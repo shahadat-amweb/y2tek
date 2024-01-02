@@ -1,11 +1,12 @@
 package com.superadmin.y2tek.tests;
 
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.y2tek.base.BaseTest;
 
-import junit.framework.Assert;
+
 
 public class RecoveryPageTest extends BaseTest {
 	@BeforeClass

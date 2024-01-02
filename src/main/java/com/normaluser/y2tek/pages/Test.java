@@ -1,4 +1,4 @@
-package com.y2tek.pages;
+package com.normaluser.y2tek.pages;
 
 import java.time.Duration;
 

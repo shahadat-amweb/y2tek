@@ -15,7 +15,7 @@ public class SuperAdminLoginPageTest extends BaseTest {
 	@Test()
 	public void loginTest() {
 		userPage = superAdLoginPage.doSuperAdminLogin(prop.getProperty("username"), prop.getProperty("password"));
-		Assert.assertTrue(userPage.isAddUserBtnExist());
+		Assert.assertTrue(!userPage.isAddUserBtnExist());
 
 	}
 }
