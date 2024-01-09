@@ -37,7 +37,6 @@ public class OptionsManager {
 //		co.addArguments("--disable-dev-shm-usage");
 //		co.addArguments("--log-level=3");
 //		co.addArguments("--output=/dev/null");
-//		
 		return co;
 	}
 
@@ -62,5 +61,4 @@ public class OptionsManager {
 		}
 		return eo;
 	}
-
 }
